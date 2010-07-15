@@ -10,7 +10,27 @@
 		AE4277B711EF91AD00CFF331 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */; };
 		AE4277F911EF91FB00CFF331 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277F811EF91FB00CFF331 /* OCMock.framework */; };
 		AE42780311EF921B00CFF331 /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42778911EF8FD600CFF331 /* Cedar.framework */; };
+		AE42781011EF929700CFF331 /* Cedar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE42778911EF8FD600CFF331 /* Cedar.framework */; };
+		AE42781111EF929700CFF331 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */; };
+		AE42781211EF929700CFF331 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE4277F811EF91FB00CFF331 /* OCMock.framework */; };
+		AE42781511EF92F600CFF331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42781411EF92F600CFF331 /* main.m */; };
+		AE42783D11EF947D00CFF331 /* ExampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42783C11EF947D00CFF331 /* ExampleSpec.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE42781311EF92B600CFF331 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE42781011EF929700CFF331 /* Cedar.framework in CopyFiles */,
+				AE42781111EF929700CFF331 /* OCHamcrest.framework in CopyFiles */,
+				AE42781211EF929700CFF331 /* OCMock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -19,6 +39,8 @@
 		AE4277AC11EF914F00CFF331 /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = "<group>"; };
 		AE4277F811EF91FB00CFF331 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
+		AE42781411EF92F600CFF331 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE42783C11EF947D00CFF331 /* ExampleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,19 +62,10 @@
 			children = (
 				AE42775B11EF8C6700CFF331 /* App */,
 				AE42775E11EF8C6B00CFF331 /* Spec */,
-				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
 				AE42778811EF8FD600CFF331 /* Externals */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
 			name = "___PROJECTNAME___";
-			sourceTree = "<group>";
-		};
-		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
-			);
-			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
 		};
 		1AB674ADFE9D54B511CA2CBB /* Products */ = {
@@ -74,6 +87,8 @@
 		AE42775E11EF8C6B00CFF331 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
+				AE42781411EF92F600CFF331 /* main.m */,
+				AE42783C11EF947D00CFF331 /* ExampleSpec.m */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
@@ -81,6 +96,7 @@
 		AE42778811EF8FD600CFF331 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
 				AE42778911EF8FD600CFF331 /* Cedar.framework */,
 				AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */,
 				AE4277F811EF91FB00CFF331 /* OCMock.framework */,
@@ -97,6 +113,7 @@
 			buildPhases = (
 				AE4277A911EF914F00CFF331 /* Sources */,
 				AE4277AA11EF914F00CFF331 /* Frameworks */,
+				AE42781311EF92B600CFF331 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -129,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE42781511EF92F600CFF331 /* main.m in Sources */,
+				AE42783D11EF947D00CFF331 /* ExampleSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
