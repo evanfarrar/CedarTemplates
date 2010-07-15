@@ -1,0 +1,14 @@
+#! /usr/bin/ruby
+
+osx_project_templates_dir = "/Developer/Library/Xcode/Project Templates"
+iphone_project_templates_dir = "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Project Templates"
+
+cedar_osx_project_template_dir = File.join(osx_project_templates_dir, 'Application', 'Cedar');
+cedar_iphone_project_template_dir = File.join(iphone_project_templates_dir, 'Application', 'Cedar');
+
+
+system(%Q[rm -rf "#{cedar_osx_project_template_dir}"])
+system(%Q[cp -R osx "#{cedar_osx_project_template_dir}"])
+
+system(%Q[rm -rf "#{cedar_iphone_project_template_dir}"])
+system(%Q[cp -R iphone "#{cedar_iphone_project_template_dir}"])

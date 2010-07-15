@@ -1,5 +1,5 @@
 //
-//  ExampleSpec.m
+//  MyModelSpec.m
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
@@ -11,11 +11,19 @@
 #import <OCHamcrest/OCHamcrest.h>
 #import <OCMock/OCMock.h>
 
+#import "MyModel.h"
+
 SPEC_BEGIN(ExampleSpec)
 
 describe(@"An example behavior", ^{
-    it(@"should fail", ^{
-        assertThat(@"foo", equalTo(@"bar"));
+    __block MyModel *model;
+
+    beforeEach(^{
+        model = [[MyModel alloc] init];
+    });
+
+    it(@"is named 'foo'", ^{
+        assertThat([model name], equalTo(@"foo"));
     });
 });
 
