@@ -8,7 +8,7 @@
 
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32A70AAB03705E1F00C91783 /* ___PROJECTNAME____Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PROJECTNAME____Prefix.pch"; sourceTree = "<group>"; };
+		32A70AAB03705E1F00C91783 /* ___PROJECTNAMEASIDENTIFIER____Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PROJECTNAMEASIDENTIFIER____Prefix.pch"; sourceTree = "<group>"; };
 		AE42778911EF8FD600CFF331 /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cedar.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,7 +43,7 @@
 		AE42775B11EF8C6700CFF331 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				32A70AAB03705E1F00C91783 /* ___PROJECTNAME____Prefix.pch */,
+				32A70AAB03705E1F00C91783 /* ___PROJECTNAMEASIDENTIFIER____Prefix.pch */,
 			);
 			path = App;
 			sourceTree = "<group>";
