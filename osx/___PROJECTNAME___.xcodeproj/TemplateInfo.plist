@@ -1,0 +1,3 @@
+{
+	Description = "This project builds a spec runner that includes Cedar, OCHamcrest, and OCMock.";
+}
