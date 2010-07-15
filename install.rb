@@ -2,4 +2,6 @@
 
 project_templates_dir = "/Developer/Library/Xcode/Project Templates"
 
-system(%Q[cp -R osx "#{File.join(project_templates_dir, 'Application', 'Cedar')}"])
+cedar_project_template_dir = File.join(project_templates_dir, 'Application', 'Cedar');
+system(%Q[rm -rf "#{cedar_project_template_dir}"])
+system(%Q[cp -R osx "#{cedar_project_template_dir}"])
