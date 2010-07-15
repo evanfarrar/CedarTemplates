@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32A70AAB03705E1F00C91783 /* ___PROJECTNAME____Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PROJECTNAME____Prefix.pch"; sourceTree = "<group>"; };
+		AE42778911EF8FD600CFF331 /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cedar.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -18,6 +19,7 @@
 				AE42775B11EF8C6700CFF331 /* App */,
 				AE42775E11EF8C6B00CFF331 /* Spec */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				AE42778811EF8FD600CFF331 /* Externals */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
 			name = "___PROJECTNAME___";
@@ -51,6 +53,14 @@
 			children = (
 			);
 			path = Spec;
+			sourceTree = "<group>";
+		};
+		AE42778811EF8FD600CFF331 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				AE42778911EF8FD600CFF331 /* Cedar.framework */,
+			);
+			path = Externals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
