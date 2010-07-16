@@ -1,14 +1,26 @@
 #! /usr/bin/ruby
 
-osx_project_templates_dir = "/Developer/Library/Xcode/Project Templates"
-iphone_project_templates_dir = "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Project Templates"
+osx_xcode_dir = "/Developer/Library/Xcode"
+iphone_xcode_dir = "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode" 
+
+osx_project_templates_dir = File.join(osx_xcode_dir, "Project Templates")
+iphone_project_templates_dir = File.join(iphone_xcode_dir, "Project Templates")
+
+osx_file_templates_dir = File.join(osx_xcode_dir, "File Templates")
+iphone_file_templates_dir = File.join(iphone_xcode_dir, "File Templates")
 
 cedar_osx_project_template_dir = File.join(osx_project_templates_dir, 'Application', 'Cedar');
 cedar_iphone_project_template_dir = File.join(iphone_project_templates_dir, 'Application', 'Cedar');
 
+cedar_osx_file_template_dir = File.join(osx_file_templates_dir, 'Cocoa Class', 'Cedar spec.pbfiletemplate');
+cedar_iphone_file_template_dir = File.join(iphone_file_templates_dir, 'Cocoa Touch Class', 'Cedar spec.pbfiletemplate');
 
 system(%Q[rm -rf "#{cedar_osx_project_template_dir}"])
-system(%Q[cp -R osx "#{cedar_osx_project_template_dir}"])
+system(%Q[rm -rf "#{cedar_osx_file_template_dir}"])
+system(%Q[cp -R Project/osx "#{cedar_osx_project_template_dir}"])
+system(%Q[cp -R File/osx "#{cedar_osx_file_template_dir}"])
 
 system(%Q[rm -rf "#{cedar_iphone_project_template_dir}"])
-system(%Q[cp -R iphone "#{cedar_iphone_project_template_dir}"])
+system(%Q[rm -rf "#{cedar_iphone_file_template_dir}"])
+system(%Q[cp -R Project/iphone "#{cedar_iphone_project_template_dir}"])
+system(%Q[cp -R File/iphone "#{cedar_iphone_file_template_dir}"])
