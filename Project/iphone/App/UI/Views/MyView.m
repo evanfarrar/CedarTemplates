@@ -2,18 +2,16 @@
 //  MyView.m
 //  ___PROJECTNAME___
 //
-//  Created by pivotal on 7/15/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 #import "MyView.h"
 
-
 @implementation MyView
 
 - (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
+    if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor redColor];
     }
     return self;

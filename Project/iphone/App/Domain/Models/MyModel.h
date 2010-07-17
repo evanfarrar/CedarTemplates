@@ -2,12 +2,11 @@
 //  MyModel.h
 //  ___PROJECTNAME___
 //
-//  Created by pivotal on 7/15/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
+#import <Foundation/Foundation.h>
 
 @interface MyModel : NSObject {
 

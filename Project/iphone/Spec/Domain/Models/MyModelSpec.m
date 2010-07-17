@@ -15,15 +15,17 @@
 
 SPEC_BEGIN(ExampleSpec)
 
-describe(@"An example behavior", ^{
+describe(@"MyModel", ^{
     __block MyModel *model;
 
     beforeEach(^{
         model = [[MyModel alloc] init];
     });
 
-    it(@"is named 'foo'", ^{
-        assertThat([model name], equalTo(@"foo"));
+    describe(@"name", ^{
+        it(@"should be 'foo'", ^{
+            assertThat([model name], equalTo(@"foo"));
+        });
     });
 });
 

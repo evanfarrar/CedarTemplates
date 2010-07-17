@@ -1,3 +1,3 @@
 {
-	Description = "Untested code angers the Chicken.";
+	Description = "This project builds a spec runner, with example specs, that includes iPhone-specific static frameworks for Cedar, OCHamcrest, and OCMock.";
 }

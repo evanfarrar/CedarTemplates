@@ -10,24 +10,25 @@
 		AE4277B711EF91AD00CFF331 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */; };
 		AE4277F911EF91FB00CFF331 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277F811EF91FB00CFF331 /* OCMock.framework */; };
 		AE42780311EF921B00CFF331 /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42778911EF8FD600CFF331 /* Cedar.framework */; };
-		AE42781011EF929700CFF331 /* Cedar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE42778911EF8FD600CFF331 /* Cedar.framework */; };
-		AE42781111EF929700CFF331 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */; };
-		AE42781211EF929700CFF331 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE4277F811EF91FB00CFF331 /* OCMock.framework */; };
+		AE42781011EF929700CFF331 /* Cedar.framework in Copy External Frameworks */ = {isa = PBXBuildFile; fileRef = AE42778911EF8FD600CFF331 /* Cedar.framework */; };
+		AE42781111EF929700CFF331 /* OCHamcrest.framework in Copy External Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */; };
+		AE42781211EF929700CFF331 /* OCMock.framework in Copy External Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277F811EF91FB00CFF331 /* OCMock.framework */; };
 		AE42781511EF92F600CFF331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42781411EF92F600CFF331 /* main.m */; };
 		AE42783D11EF947D00CFF331 /* ExampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42783C11EF947D00CFF331 /* ExampleSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AE42781311EF92B600CFF331 /* CopyFiles */ = {
+		AE42781311EF92B600CFF331 /* Copy External Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AE42781011EF929700CFF331 /* Cedar.framework in CopyFiles */,
-				AE42781111EF929700CFF331 /* OCHamcrest.framework in CopyFiles */,
-				AE42781211EF929700CFF331 /* OCMock.framework in CopyFiles */,
+				AE42781011EF929700CFF331 /* Cedar.framework in Copy External Frameworks */,
+				AE42781111EF929700CFF331 /* OCHamcrest.framework in Copy External Frameworks */,
+				AE42781211EF929700CFF331 /* OCMock.framework in Copy External Frameworks */,
 			);
+			name = "Copy External Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -113,7 +114,7 @@
 			buildPhases = (
 				AE4277A911EF914F00CFF331 /* Sources */,
 				AE4277AA11EF914F00CFF331 /* Frameworks */,
-				AE42781311EF92B600CFF331 /* CopyFiles */,
+				AE42781311EF92B600CFF331 /* Copy External Frameworks */,
 			);
 			buildRules = (
 			);
