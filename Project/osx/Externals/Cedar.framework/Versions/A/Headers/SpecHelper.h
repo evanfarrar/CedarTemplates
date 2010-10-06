@@ -3,12 +3,10 @@
 #import "CDRExampleParent.h"
 
 @interface SpecHelper : NSObject <CDRExampleParent> {
-    NSMutableDictionary *sharedExampleGroups_, *sharedExampleContext_;
+    NSMutableDictionary *sharedExampleGroups_;
 }
 
-@property (nonatomic, retain, readonly) NSMutableDictionary *sharedExampleContext;
-
-+ (SpecHelper *)specHelper;
++ (id)specHelper;
 
 - (void)beforeEach;
 - (void)afterEach;
