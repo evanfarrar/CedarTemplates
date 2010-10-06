@@ -3,13 +3,13 @@
 @protocol CDRSharedExampleGroupPool
 @end
 
-typedef void (^CDRSharedExampleGroupBlock)(NSDictionary *);
+typedef void (^CDRSharedExampleGroupBlock)(NSDictionary *context);
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 void sharedExamplesFor(NSString *, CDRSharedExampleGroupBlock);
-void itShouldBehaveLike(NSString *);
+void itShouldBehaveLike(NSString *, NSDictionary *);
 #ifdef __cplusplus
 }
 #endif
