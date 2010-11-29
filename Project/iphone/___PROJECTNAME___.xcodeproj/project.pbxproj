@@ -42,6 +42,7 @@
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32A70AAB03705E1F00C91783 /* ___PROJECTNAMEASIDENTIFIER____Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PROJECTNAMEASIDENTIFIER____Prefix.pch"; sourceTree = "<group>"; };
+		66CF8B8B12A34DA000309F79 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		AE26662A11EFB89800EE18BD /* MyModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModelSpec.m; sourceTree = "<group>"; };
 		AE26663111EFB93400EE18BD /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
 		AE26663211EFB93400EE18BD /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 				AE42778811EF8FD600CFF331 /* Externals */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				AE4279BC11EFB65000CFF331 /* UISpecs-Info.plist */,
+				66CF8B8B12A34DA000309F79 /* Rakefile */,
 			);
 			name = "___PROJECTNAME___";
 			sourceTree = "<group>";
@@ -251,7 +253,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "___PROJECTNAME___" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* ___PROJECTNAME___ */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -401,7 +410,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UISpecs;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphonesimulator4.2;
 			};
 			name = Debug;
 		};
@@ -432,7 +441,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UISpecs;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphonesimulator4.2;
 				ZERO_LINK = NO;
 			};
 			name = Release;

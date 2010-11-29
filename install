@@ -17,10 +17,14 @@ cedar_iphone_file_template_dir = File.join(iphone_file_templates_dir, 'Cocoa Tou
 
 system(%Q[rm -rf "#{cedar_osx_project_template_dir}"])
 system(%Q[rm -rf "#{cedar_osx_file_template_dir}"])
+puts "Copying OS X project templates to #{cedar_osx_project_template_dir}"
 system(%Q[cp -R Project/osx "#{cedar_osx_project_template_dir}"])
+puts "Copying OS X file templates to #{cedar_osx_file_template_dir}"
 system(%Q[cp -R File/osx "#{cedar_osx_file_template_dir}"])
 
 system(%Q[rm -rf "#{cedar_iphone_project_template_dir}"])
 system(%Q[rm -rf "#{cedar_iphone_file_template_dir}"])
+puts "Copying iOS project templates to #{cedar_iphone_project_template_dir}"
 system(%Q[cp -R Project/iphone "#{cedar_iphone_project_template_dir}"])
+puts "Copying iOS file templates to #{cedar_iphone_file_template_dir}"
 system(%Q[cp -R File/iphone "#{cedar_iphone_file_template_dir}"])
