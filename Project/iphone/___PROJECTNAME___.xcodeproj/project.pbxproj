@@ -401,6 +401,7 @@
 				INFOPLIST_FILE = "UISpecs-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
+					"-all_load",
 					"-ObjC",
 					"-lstdc++",
 					"-framework",
@@ -432,6 +433,7 @@
 				INFOPLIST_FILE = "UISpecs-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
+					"-all_load",
 					"-ObjC",
 					"-lstdc++",
 					"-framework",
