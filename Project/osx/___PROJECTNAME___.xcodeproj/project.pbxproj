@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE4277B711EF91AD00CFF331 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */; };
 		AE4277F911EF91FB00CFF331 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277F811EF91FB00CFF331 /* OCMock.framework */; };
 		AE42780311EF921B00CFF331 /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42778911EF8FD600CFF331 /* Cedar.framework */; };
 		AE42781011EF929700CFF331 /* Cedar.framework in Copy External Frameworks */ = {isa = PBXBuildFile; fileRef = AE42778911EF8FD600CFF331 /* Cedar.framework */; };
-		AE42781111EF929700CFF331 /* OCHamcrest.framework in Copy External Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */; };
 		AE42781211EF929700CFF331 /* OCMock.framework in Copy External Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277F811EF91FB00CFF331 /* OCMock.framework */; };
 		AE42781511EF92F600CFF331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42781411EF92F600CFF331 /* main.m */; };
 		AE42783D11EF947D00CFF331 /* ExampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42783C11EF947D00CFF331 /* ExampleSpec.m */; };
+		AE958E8B130B19B000576AC3 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE958E8A130B19B000576AC3 /* OCHamcrest.framework */; };
+		AE958EBE130B19B600576AC3 /* OCHamcrest.framework in Copy External Frameworks */ = {isa = PBXBuildFile; fileRef = AE958E8A130B19B000576AC3 /* OCHamcrest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +24,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AE958EBE130B19B600576AC3 /* OCHamcrest.framework in Copy External Frameworks */,
 				AE42781011EF929700CFF331 /* Cedar.framework in Copy External Frameworks */,
-				AE42781111EF929700CFF331 /* OCHamcrest.framework in Copy External Frameworks */,
 				AE42781211EF929700CFF331 /* OCMock.framework in Copy External Frameworks */,
 			);
 			name = "Copy External Frameworks";
@@ -39,10 +39,10 @@
 		66CF8BBE12A34E8600309F79 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		AE42778911EF8FD600CFF331 /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cedar.framework; sourceTree = "<group>"; };
 		AE4277AC11EF914F00CFF331 /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = "<group>"; };
 		AE4277F811EF91FB00CFF331 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
 		AE42781411EF92F600CFF331 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE42783C11EF947D00CFF331 /* ExampleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleSpec.m; sourceTree = "<group>"; };
+		AE958E8A130B19B000576AC3 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE42780311EF921B00CFF331 /* Cedar.framework in Frameworks */,
-				AE4277B711EF91AD00CFF331 /* OCHamcrest.framework in Frameworks */,
 				AE4277F911EF91FB00CFF331 /* OCMock.framework in Frameworks */,
+				AE958E8B130B19B000576AC3 /* OCHamcrest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +99,9 @@
 		AE42778811EF8FD600CFF331 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				AE958E8A130B19B000576AC3 /* OCHamcrest.framework */,
 				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
 				AE42778911EF8FD600CFF331 /* Cedar.framework */,
-				AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */,
 				AE4277F811EF91FB00CFF331 /* OCMock.framework */,
 			);
 			path = Externals;

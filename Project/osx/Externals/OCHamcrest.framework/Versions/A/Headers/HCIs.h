@@ -1,12 +1,12 @@
 //
 //  OCHamcrest - HCIs.h
-//  Copyright 2009 www.hamcrest.org. See LICENSE.txt
+//  Copyright 2011 hamcrest.org. See LICENSE.txt
 //
 //  Created by: Jon Reid
 //
 
     // Inherited
-#import "HCBaseMatcher.h"
+#import <OCHamcrest/HCBaseMatcher.h>
 
 
 /**
@@ -21,46 +21,59 @@ assertThat(cheese, equalTo(smelly))
 @code
 assertThat(cheese, is(equalTo(smelly)))
 @endcode
-*/
+
+    @ingroup core_matchers
+ */
 @interface HCIs : HCBaseMatcher
 {
     id<HCMatcher> matcher;
 }
 
-+ (HCIs*) is:(id<HCMatcher>)aMatcher;
-- (id) initWithMatcher:(id<HCMatcher>)aMatcher;
++ (id)is:(id<HCMatcher>)aMatcher;
+- (id)initWithMatcher:(id<HCMatcher>)aMatcher;
 
 @end
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /**
-    Decorates an item, providing shortcuts to the frequently used is(equalTo(x)).
-    
-    For example:
+    Decorates another matcher, or provides a shortcut to the frequently used @ref is(equalTo(x)).
+
+    If @a matcherOrValue is a matcher, its behavior is retained, but the test may be more expressive.
+
+    If @a matcherOrValue is not a matcher, it is wrapped in an @ref equalTo matcher. This makes the
+    following three statements the same:
 @code
+assertThat(cheese, equalTo(smelly))
 assertThat(cheese, is(equalTo(smelly)))
-@endcode
-    vs.
-@code
 assertThat(cheese, is(smelly))
 @endcode
-*/
-id<HCMatcher> HC_is(id item);
+    Choose the style that makes your expression most readable. This will vary depending on context.
 
-#ifdef __cplusplus
-}
-#endif
-
-
-#ifdef HC_SHORTHAND
+    @b Synonym: @ref is
+    @see HCIs
+    @ingroup core_matchers
+ */
+OBJC_EXPORT id<HCMatcher> HC_is(id matcherOrValue);
 
 /**
-    Shorthand for HC_is, available if HC_SHORTHAND is defined.
-*/
-#define is HC_is
+    is(matcherOrValue) -
+    Decorates another matcher, or provides a shortcut to the frequently used @ref is(equalTo(x)).
 
+    If @a matcherOrValue is a matcher, its behavior is retained, but the test may be more expressive.
+
+    If @a matcherOrValue is not a matcher, it is wrapped in an @ref equalTo matcher. This makes the
+    following three statements the same:
+@code
+assertThat(cheese, equalTo(smelly))
+assertThat(cheese, is(equalTo(smelly)))
+assertThat(cheese, is(smelly))
+@endcode
+    Choose the style that makes your expression most readable. This will vary depending on context.
+
+    Synonym for @ref HC_is, available if @c HC_SHORTHAND is defined.
+    @see HCIs
+    @ingroup core_matchers
+ */
+#ifdef HC_SHORTHAND
+    #define is HC_is
 #endif

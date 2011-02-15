@@ -1,61 +1,73 @@
 //
 //  OCHamcrest - HCIsAnything.h
-//  Copyright 2009 www.hamcrest.org. See LICENSE.txt
+//  Copyright 2011 hamcrest.org. See LICENSE.txt
 //
 //  Created by: Jon Reid
 //
 
     // Inherited
-#import "HCBaseMatcher.h"
+#import <OCHamcrest/HCBaseMatcher.h>
 
 
 /**
     A matcher that always returns @c YES.
-*/
+    @ingroup core_matchers
+ */
 @interface HCIsAnything : HCBaseMatcher
 {
-    NSString* description;
+    NSString *description;
 }
 
-+ (HCIsAnything*) isAnything;
-+ (HCIsAnything*) isAnythingWithDescription:(NSString*)aDescription;
-- (id) init;
-- (id) initWithDescription:(NSString*)aDescription;
++ (id)isAnything;
++ (id)isAnythingWithDescription:(NSString *)aDescription;
+
+- (id)init;
+- (id)initWithDescription:(NSString *)aDescription;
 
 @end
 
-
-#ifdef __cplusplus
-extern "C" {
-#endif
+//--------------------------------------------------------------------------------------------------
 
 /**
     This matcher always evaluates to @c YES.
-*/
-id<HCMatcher> HC_anything();
+ 
+    @b Synonym: @ref anything
+    @see HCIsAnything
+    @ingroup core_matchers
+ */
+OBJC_EXPORT id<HCMatcher> HC_anything();
 
 /**
-    This matcher always evaluates to <code>YES</code>.
-    
-    @param aDescription A meaningful string used when describing itself.
-*/
-id<HCMatcher> HC_anythingWithDescription(NSString* aDescription);
+    This matcher always evaluates to @c YES.
 
-#ifdef __cplusplus
-}
+    Synonym for @ref HC_anything, available if @c HC_SHORTHAND is defined.
+    @see HCIsAnything
+    @ingroup core_matchers
+ */
+#ifdef HC_SHORTHAND
+    #define anything() HC_anything()
 #endif
 
 
+/**
+    This matcher always evaluates to @c YES.
+
+    @b Synonym: @ref anythingWithDescription
+    @param aDescription  A meaningful string used when describing itself.
+    @see HCIsAnything
+    @ingroup core_matchers
+ */
+OBJC_EXPORT id<HCMatcher> HC_anythingWithDescription(NSString *aDescription);
+
+/**
+    anythingWithDescription(description) -
+    This matcher always evaluates to @c YES.
+
+    Synonym for @ref HC_anythingWithDescription, available if @c HC_SHORTHAND is defined.
+    @param aDescription  A meaningful string used when describing itself.
+    @see HCIsAnything
+    @ingroup core_matchers
+ */
 #ifdef HC_SHORTHAND
-
-/**
-    Shorthand for HC_anything, available if HC_SHORTHAND is defined.
-*/
-#define anything HC_anything
-
-/**
-    Shorthand for HC_anythingWithDescription, available if HC_SHORTHAND is defined.
-*/
-#define anythingWithDescription HC_anythingWithDescription
-
+    #define anythingWithDescription HC_anythingWithDescription
 #endif

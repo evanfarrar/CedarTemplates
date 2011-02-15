@@ -1,44 +1,47 @@
 //
 //  OCHamcrest - HCIsEqualIgnoringCase.h
-//  Copyright 2009 www.hamcrest.org. See LICENSE.txt
+//  Copyright 2011 hamcrest.org. See LICENSE.txt
 //
 //  Created by: Jon Reid
 //
 
     // Inherited
-#import "HCBaseMatcher.h"
+#import <OCHamcrest/HCBaseMatcher.h>
 
 
 /**
     Tests if a string is equal to another string, regardless of the case.
-*/
+    @ingroup text_matchers
+ */
 @interface HCIsEqualIgnoringCase : HCBaseMatcher
 {
-    NSString* string;
+    NSString *string;
 }
 
-+ (HCIsEqualIgnoringCase*) isEqualIgnoringCase:(NSString*)aString;
-- (id) initWithString:(NSString*)aString;
++ (id)isEqualIgnoringCase:(NSString *)aString;
+- (id)initWithString:(NSString *)aString;
 
 @end
 
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-id<HCMatcher> HC_equalToIgnoringCase(NSString* aString);
-
-#ifdef __cplusplus
-}
-#endif
-
-
-#ifdef HC_SHORTHAND
+//--------------------------------------------------------------------------------------------------
 
 /**
-    Shorthand for HC_endsWith, available if HC_SHORTHAND is defined.
-*/
-#define equalToIgnoringCase HC_equalToIgnoringCase
+    Tests if a string is equal to another string, regardless of the case.
 
+    @b Synonym: @ref equalToIgnoringCase
+    @see HCIsEqualIgnoringCase
+    @ingroup text_matchers
+ */
+OBJC_EXPORT id<HCMatcher> HC_equalToIgnoringCase(NSString *string);
+
+/**
+    equalToIgnoringCase(string) -
+    Tests if a string is equal to another string, regardless of the case.
+
+    Synonym for @ref HC_equalToIgnoringCase, available if @c HC_SHORTHAND is defined.
+    @see HCIsEqualIgnoringCase
+    @ingroup text_matchers
+ */
+#ifdef HC_SHORTHAND
+    #define equalToIgnoringCase HC_equalToIgnoringCase
 #endif

@@ -1,48 +1,53 @@
 //
 //  OCHamcrest - HCHasDescription.h
-//  Copyright 2009 www.hamcrest.org. See LICENSE.txt
+//  Copyright 2011 hamcrest.org. See LICENSE.txt
 //
 //  Created by: Jon Reid
 //
 
     // Inherited
-#import "HCInvocationMatcher.h"
+#import <OCHamcrest/HCInvocationMatcher.h>
 
 
 /**
-    Does the object's description satisfy a given matcher?
-*/
+    Does the object's @c -description satisfy a given matcher?
+    @ingroup object_matchers
+ */
 @interface HCHasDescription : HCInvocationMatcher
-{
-}
 
-+ (HCHasDescription*) hasDescription:(id<HCMatcher>)descriptionMatcher;
-- (id) initWithDescription:(id<HCMatcher>)descriptionMatcher;
++ (id)hasDescription:(id<HCMatcher>)descriptionMatcher;
+- (id)initWithDescription:(id<HCMatcher>)descriptionMatcher;
 
 @end
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /**
     Evaluates whether [item description] satisfies a given matcher.
+    
+    Examples:
+    @li @ref hasDescription(@ref startsWith(\@"foo"))
+    @li @ref hasDescription(\@"bar")
 
-    Example: hasDescription(equalTo(result))
+    @b Synonym: @ref hasDescription
+    @param matcherOrValue  A matcher, or a value for @ref equalTo matching.
+    @see HCHasDescription
+    @ingroup object_matchers
 */
-id<HCMatcher> HC_hasDescription(id item);
-
-#ifdef __cplusplus
-}
-#endif
-
-
-#ifdef HC_SHORTHAND
+OBJC_EXPORT id<HCMatcher> HC_hasDescription(id matcherOrValue);
 
 /**
-    Shorthand for HC_hasDescription, available if HC_SHORTHAND is defined.
-*/
-#define hasDescription HC_hasDescription
+    hasDescription(matcherOrValue) -
+    Evaluates whether [item description] satisfies a given matcher.
 
+    Examples:
+    @li @ref hasDescription(@ref startsWith(\@"foo"))
+    @li @ref hasDescription(\@"bar")
+
+    Synonym for @ref HC_hasDescription, available if @c HC_SHORTHAND is defined.
+    @param matcherOrValue  A matcher, or a value for @ref equalTo matching.
+    @see HCHasDescription
+    @ingroup object_matchers
+ */
+#ifdef HC_SHORTHAND
+    #define hasDescription(matcherOrValue)  HC_hasDescription(matcherOrValue)
 #endif
