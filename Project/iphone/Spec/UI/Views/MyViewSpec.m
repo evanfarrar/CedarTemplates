@@ -8,7 +8,7 @@
 
 #import <Cedar-iPhone/SpecHelper.h>
 #define HC_SHORTHAND
-#import <OCHamcrest-iPhone/OCHamcrest.h>
+#import <OCHamcrestIOS/OCHamcrestIOS.h>
 #import <OCMock-iPhone/OCMock.h>
 
 #import "MyView.h"

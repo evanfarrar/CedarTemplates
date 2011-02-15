@@ -1,41 +1,49 @@
 //
 //  OCHamcrest - HCIsDictionaryContainingKey.h
-//  Copyright 2009 www.hamcrest.org. See LICENSE.txt
+//  Copyright 2011 hamcrest.org. See LICENSE.txt
 //
 //  Created by: Jon Reid
 //
 
     // Inherited
-#import "HCBaseMatcher.h"
+#import <OCHamcrest/HCBaseMatcher.h>
 
 
+/**
+    Matches dictionaries containing a key satisfying a given matcher.
+    @ingroup collection_matchers
+ */
 @interface HCIsDictionaryContainingKey : HCBaseMatcher
 {
     id<HCMatcher> keyMatcher;
 }
 
-+ (HCIsDictionaryContainingKey*) isDictionaryContainingKey:(id<HCMatcher>)theKeyMatcher;
-- (id) initWithKeyMatcher:(id<HCMatcher>)theKeyMatcher;
++ (id)isDictionaryContainingKey:(id<HCMatcher>)theKeyMatcher;
+- (id)initWithKeyMatcher:(id<HCMatcher>)theKeyMatcher;
 
 @end
 
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-id<HCMatcher> HC_hasKey(id item);
-
-#ifdef __cplusplus
-}
-#endif
-
-
-#ifdef HC_SHORTHAND
+//--------------------------------------------------------------------------------------------------
 
 /**
-    Shorthand for HC_hasKey, available if HC_SHORTHAND is defined.
-*/
-#define hasKey HC_hasKey
+    Matches dictionaries containing a key satisfying a given matcher.
 
+    @b Synonym: @ref hasKey
+    @param matcherOrValue  A matcher, or a value for @ref equalTo matching.
+    @see HCIsDictionaryContainingKey
+    @ingroup collection_matchers
+ */
+OBJC_EXPORT id<HCMatcher> HC_hasKey(id matcherOrValue);
+
+/**
+    hasKey(matcherOrValue) -
+    Matches dictionaries containing a key satisfying a given matcher.
+
+    Synonym for @ref HC_hasKey, available if @c HC_SHORTHAND is defined.
+    @param matcherOrValue  A matcher, or a value for @ref equalTo matching.
+    @see HCIsDictionaryContainingKey
+    @ingroup collection_matchers
+ */
+#ifdef HC_SHORTHAND
+    #define hasKey HC_hasKey
 #endif

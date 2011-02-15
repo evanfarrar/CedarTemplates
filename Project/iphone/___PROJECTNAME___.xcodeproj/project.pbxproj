@@ -10,14 +10,11 @@
 		AE26662B11EFB89800EE18BD /* MyModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26662A11EFB89800EE18BD /* MyModelSpec.m */; };
 		AE26663311EFB93400EE18BD /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26663211EFB93400EE18BD /* MyModel.m */; };
 		AE26667711EFBAB100EE18BD /* Cedar-iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42792411EF992A00CFF331 /* Cedar-iPhone.framework */; };
-		AE26667811EFBAB100EE18BD /* OCHamcrest-iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42794311EF997500CFF331 /* OCHamcrest-iPhone.framework */; };
 		AE26669011EFBBA500EE18BD /* MyViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26668F11EFBBA500EE18BD /* MyViewSpec.m */; };
 		AE2667B211EFC2B000EE18BD /* OCMock-iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2667B111EFC2B000EE18BD /* OCMock-iPhone.framework */; };
-		AE4277B711EF91AD00CFF331 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */; };
 		AE4277F911EF91FB00CFF331 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4277F811EF91FB00CFF331 /* OCMock.framework */; };
 		AE42780311EF921B00CFF331 /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42778911EF8FD600CFF331 /* Cedar.framework */; };
 		AE42781011EF929700CFF331 /* Cedar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE42778911EF8FD600CFF331 /* Cedar.framework */; };
-		AE42781111EF929700CFF331 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */; };
 		AE42781211EF929700CFF331 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE4277F811EF91FB00CFF331 /* OCMock.framework */; };
 		AE4279C011EFB67F00CFF331 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE42798311EFB40800CFF331 /* MyView.m */; };
 		AE4279F511EFB7A000CFF331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4279F411EFB7A000CFF331 /* main.m */; };
@@ -27,6 +24,9 @@
 		AE95163212A83AAF0029C680 /* ___PROJECTNAME___AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95163112A83AAF0029C680 /* ___PROJECTNAME___AppDelegate.m */; };
 		AE95163312A83AAF0029C680 /* ___PROJECTNAME___AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95163112A83AAF0029C680 /* ___PROJECTNAME___AppDelegate.m */; };
 		AE95163912A83B7C0029C680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95163812A83B7C0029C680 /* main.m */; };
+		AE958DD6130B16F800576AC3 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE958DD5130B16F800576AC3 /* OCHamcrest.framework */; };
+		AE958E0A130B170D00576AC3 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE958E09130B170D00576AC3 /* OCHamcrestIOS.framework */; };
+		AE958E51130B17BF00576AC3 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE958DD5130B16F800576AC3 /* OCHamcrest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,8 +36,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AE958E51130B17BF00576AC3 /* OCHamcrest.framework in CopyFiles */,
 				AE42781011EF929700CFF331 /* Cedar.framework in CopyFiles */,
-				AE42781111EF929700CFF331 /* OCHamcrest.framework in CopyFiles */,
 				AE42781211EF929700CFF331 /* OCMock.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,11 +54,9 @@
 		AE26668F11EFBBA500EE18BD /* MyViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewSpec.m; sourceTree = "<group>"; };
 		AE2667B111EFC2B000EE18BD /* OCMock-iPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "OCMock-iPhone.framework"; sourceTree = "<group>"; };
 		AE42778911EF8FD600CFF331 /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cedar.framework; sourceTree = "<group>"; };
-		AE4277AC11EF914F00CFF331 /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = "<group>"; };
+		AE4277AC11EF914F00CFF331 /* Specs */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4277F811EF91FB00CFF331 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
 		AE42792411EF992A00CFF331 /* Cedar-iPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Cedar-iPhone.framework"; sourceTree = "<group>"; };
-		AE42794311EF997500CFF331 /* OCHamcrest-iPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "OCHamcrest-iPhone.framework"; sourceTree = "<group>"; };
 		AE42798211EFB40800CFF331 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		AE42798311EFB40800CFF331 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		AE4279BA11EFB64F00CFF331 /* UISpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +69,8 @@
 		AE95163012A83AAF0029C680 /* ___PROJECTNAME___AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PROJECTNAME___AppDelegate.h"; sourceTree = "<group>"; };
 		AE95163112A83AAF0029C680 /* ___PROJECTNAME___AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___PROJECTNAME___AppDelegate.m"; sourceTree = "<group>"; };
 		AE95163812A83B7C0029C680 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE958DD5130B16F800576AC3 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = "<group>"; };
+		AE958E09130B170D00576AC3 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE958DD6130B16F800576AC3 /* OCHamcrest.framework in Frameworks */,
 				AE42780311EF921B00CFF331 /* Cedar.framework in Frameworks */,
-				AE4277B711EF91AD00CFF331 /* OCHamcrest.framework in Frameworks */,
 				AE4277F911EF91FB00CFF331 /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,8 +89,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE26667711EFBAB100EE18BD /* Cedar-iPhone.framework in Frameworks */,
-				AE26667811EFBAB100EE18BD /* OCHamcrest-iPhone.framework in Frameworks */,
 				AE2667B211EFC2B000EE18BD /* OCMock-iPhone.framework in Frameworks */,
+				AE958E0A130B170D00576AC3 /* OCHamcrestIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,13 +168,13 @@
 		AE42778811EF8FD600CFF331 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				AE958DD5130B16F800576AC3 /* OCHamcrest.framework */,
+				AE958E09130B170D00576AC3 /* OCHamcrestIOS.framework */,
 				AE2667B111EFC2B000EE18BD /* OCMock-iPhone.framework */,
 				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
 				AE42778911EF8FD600CFF331 /* Cedar.framework */,
-				AE4277B611EF91AD00CFF331 /* OCHamcrest.framework */,
 				AE4277F811EF91FB00CFF331 /* OCMock.framework */,
 				AE42792411EF992A00CFF331 /* Cedar-iPhone.framework */,
-				AE42794311EF997500CFF331 /* OCHamcrest-iPhone.framework */,
 			);
 			path = Externals;
 			sourceTree = "<group>";
