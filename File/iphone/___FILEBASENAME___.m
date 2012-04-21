@@ -1,17 +1,18 @@
 //
-//  «FILENAME»
-//  «PROJECTNAME»
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by «FULLUSERNAME» on «DATE».
-//  Copyright «YEAR» «ORGANIZATIONNAME». All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import <Cedar-iPhone/SpecHelper.h>
+#import <Cedar/SpecHelper.h>
 #define HC_SHORTHAND
-#import <OCHamcrest-iPhone/OCHamcrest.h>
+#import <OCHamcrest/OCHamcrest.h>
+#import <OCMock/OCMock.h>
 #import <OCMock-iPhone/OCMock.h>
 
-SPEC_BEGIN(«FILEBASENAMEASIDENTIFIER»)
+SPEC_BEGIN(___FILEBASENAMEASIDENTIFIER___)
 
 describe(@"<#subject under test#>", ^{
     beforeEach(^{
